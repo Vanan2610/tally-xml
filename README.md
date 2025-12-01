@@ -365,11 +365,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This package is open-sourced software licensed under the [MIT license](LICENSE).
 
-## Author
-
-**Tamilvanan**  
-Email: tamilvanan2610@gmail.com
-
 ## Support
 
 If you encounter any issues or have questions:
