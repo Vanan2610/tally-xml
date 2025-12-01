@@ -171,7 +171,7 @@ Required fields:
 
 ### Automatic Validation (Default)
 ```php
-use Tamilvanan\TallyXml\Converters\JsonToVoucherConverter;
+use Devtally\TallyXml\Converters\JsonToVoucherConverter;
 
 $converter = new JsonToVoucherConverter();
 try {
@@ -183,7 +183,7 @@ try {
 
 ### Manual Validation
 ```php
-use Tamilvanan\TallyXml\Validation\JsonValidator;
+use Devtally\TallyXml\Validation\JsonValidator;
 
 $validator = new JsonValidator();
 

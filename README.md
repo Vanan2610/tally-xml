@@ -30,7 +30,7 @@ composer require devtally/tally-xml
 The easiest way to get started is using the JSON converters:
 
 ```php
-use Tamilvanan\TallyXml\Converters\JsonToVoucherConverter;
+use Devtally\TallyXml\Converters\JsonToVoucherConverter;
 
 $json = [
     'company_name' => 'My Company Ltd',
@@ -72,8 +72,8 @@ file_put_contents('voucher.xml', $xml);
 ### 1. Master Data - Create Ledgers
 
 ```php
-use Tamilvanan\TallyXml\Builders\LedgerBuilder;
-use Tamilvanan\TallyXml\TallyXmlConverter;
+use Devtally\TallyXml\Builders\LedgerBuilder;
+use Devtally\TallyXml\TallyXmlConverter;
 
 // Create a customer ledger
 $ledger = LedgerBuilder::customer('ABC Corporation')
@@ -109,7 +109,7 @@ $ledger = LedgerBuilder::create('Transport Charges', 'Indirect Expenses')->build
 ### 2. Master Data - Create Stock Items
 
 ```php
-use Tamilvanan\TallyXml\Builders\StockItemBuilder;
+use Devtally\TallyXml\Builders\StockItemBuilder;
 
 $stockItem = StockItemBuilder::create('Laptop HP Pavilion', 'Nos')
     ->gstApplicable(true)
@@ -123,7 +123,7 @@ $xml = $converter->convert($stockItem);
 ### 3. Master Data - Create Units
 
 ```php
-use Tamilvanan\TallyXml\Builders\UnitBuilder;
+use Devtally\TallyXml\Builders\UnitBuilder;
 
 $unit = UnitBuilder::create('Boxes', 'BOX')
     ->decimalPlaces(2)
@@ -135,7 +135,7 @@ $xml = $converter->convert($unit);
 ### 4. Create Vouchers - Sales Invoice
 
 ```php
-use Tamilvanan\TallyXml\Builders\VoucherBuilder;
+use Devtally\TallyXml\Builders\VoucherBuilder;
 
 $voucher = VoucherBuilder::sales('INV-2024-001', '2024-01-15')
     ->partyName('ABC Corporation')
