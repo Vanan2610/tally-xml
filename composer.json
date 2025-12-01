@@ -1,0 +1,30 @@
+{
+    "name": "devtally/tally-xml",
+    "description": "Convert JSON data to Tally-compatible XML for direct import into Tally",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tamilvanan",
+            "email": "tamilvanan2610@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devtally\\TallyXml\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devtally\\TallyXml\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
